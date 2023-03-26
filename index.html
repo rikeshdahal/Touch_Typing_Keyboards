@@ -1,95 +1,65 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Keyboard</title>
-    <style>
-      body {
-        background-color: black;
-        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-        font-weight: 500;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-      }
-
-      .title {
-        color: mintcream;
-        text-transform: uppercase;
-        margin-top: 3em;
-        margin-bottom: 3em;
-        font-size: 1em;
-        font-family: cursive;
-        letter-spacing: 0.3em;
-      }
-
-      .keyboard {
-        display: flex;
-        flex-direction: column;
-      }
-
-      .row {
-        list-style: none;
-        display: flex;
-      }
-
-      li {
-        height: 3em;
-        width: 3em;
-        color: rgba(0, 0, 0, 0.7);
-        border-radius: 0.4em;
-        line-height: 3em;
-        letter-spacing: 1px;
-        margin: 0.4em;
-        transition: 0.3s;
-        text-align: center;
-        font-size: 1em;
-      }
-
-      #tab {
-        width: 5em;
-      }
-
-      #caps {
-        width: 6em;
-      }
-
-      #left-shift {
-        width: 8em;
-      }
-
-      #enter, #esc, #back, #right-shift {
-        width: 7em;
-      }
-
-      #1, #2, #3, #4, #5, #6, #7, #8, #9, #10, #Q, #W, #E, #R, #T, #Y, #U, #I, #O, #P, #A, #S, #D, #F, #G, #H, #J, #K, #L, #Z, #X, #C, #V, #B, #N, #M {
-        cursor: pointer;
-      }
-
-      li:hover {
-        background-color: rgba(0, 0, 0, 0.1);
-        color: white;
-      }
-    </style>
-  </head>
-  <body>
-    <h1 class="title">Eyes on the screen</h1>
-    <div class="keyboard">
-      <ul class="row row-0">
-        <li class="pinky" id="esc">ESC</li>
-        <li class="pinky" id="1">1</li>
-        <li class="ring" id="2">2</li>
-        <li class="middle" id="3">3</li>
-        <li class="pointer1st" id="4">4</li>
-        <li class="pointer2nd" id="5">5</li>
-        <li class="pointer2nd" id="6">6</li>
-        <li class="pointer1st" id="7">7</li>
-        <li class="middle" id="8">8</li>
-        <li class="ring" id="9">9</li>
-        <li class="pinky" id="10">0</li>
-        <li class="pinky">-</li>
-        <li class="pinky">+</li>
-        <li class="pinky" id="back">BACK</li>
-      </ul>
-      <ul class="row
+<h1 class="title">Eyes on the screen</h1>
+<div class="keyboard">
+  <ul class="row row-0">
+    <li class="pinky" id="esc">ESC</li>
+    <li class="pinky" id="1">1</li>
+    <li class="ring" id="2">2</li>
+    <li class="middle" id="3">3</li>
+    <li class="pointer1st" id="4">4</li>
+    <li class="pointer2nd" id="5">5</li>
+    <li class="pointer2nd" id="6">6</li>
+    <li class="pointer1st" id="7">7</li>
+    <li class="middle" id="8">8</li>
+    <li class="ring" id="9">9</li>
+    <li class="pinky" id="10">0</li>
+    <li class="pinky" >-</li>
+    <li class="pinky" >+</li>
+    <li class="pinky" id="back">BACK</li>
+  </ul>
+  <ul class="row row-1">
+    <li class="pinky" id="tab">TAB</li>
+    <li class="pinky" id="Q">Q</li>
+    <li class="ring" id="W">W</li>
+    <li class="middle" id="E">E</li>
+    <li class="pointer1st" id="R">R</li>
+    <li class="pointer2nd" id="T">T</li>
+    <li class="pointer2nd" id="Y">Y</li>
+    <li class="pointer1st" id="U">U</li>
+    <li class="middle" id="I">I</li>
+    <li class="ring" id="O">O</li>
+    <li class="pinky" id="P">P</li>
+    <li class="pinky" >[</li>
+    <li class="pinky" >]</li>
+    <li class="pinky" >\</li>
+  </ul>
+  <ul class="row row-2">
+    <li class="pinky" id="caps">CAPS</li>
+    <li class="pinky" id="A">A</li>
+    <li class="ring" id="S">S</li>
+    <li class="middle" id="D">D</li>
+    <li class="pointer1st" id="F">F</li>
+    <li class="pointer2nd" id="G">G</li>
+    <li class="pointer2nd" id="H">H</li>
+    <li class="pointer1st" id="J">J</li>
+    <li class="middle" id="K">K</li>
+    <li class="ring" id="L">L</li>
+    <li class="pinky" >:</li>
+    <li class="pinky" >''</li>
+    <li class="pinky" id="enter">ENTER</li>
+  </ul>
+  <ul class="row row-3">
+    <li class="pinky" id="left-shift">SHIFT</li>
+    <li class="pinky" id="Z">Z</li>
+    <li class="ring" id="X">X</li>
+    <li class="middle" id="C">C</li>
+    <li class="pointer1st" id="V">V</li>
+    <li class="pointer2nd" id="B">B</li>
+    <li class="pointer2nd" id="N">N</li>
+    <li class="pointer1st" id="M">M</li>
+    <li class="middle" >,</li>
+    <li class="ring" >.</li>
+    <li class="pinky" >;</li>
+    <li class="pinky" id="right-shift">SHIFT</li>
+  </ul>
+</div>
+<h1 class="title">Amazing keyboard practice</h1>
